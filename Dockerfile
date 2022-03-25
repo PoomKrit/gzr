@@ -18,6 +18,7 @@ RUN gem install bundler && \
 RUN	bundle install
 
 COPY . .
+COPY .netrc /root
 
 RUN bundle exec rake install
 
